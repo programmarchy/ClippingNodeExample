@@ -21,7 +21,6 @@
 
 - (void)didLoadFromCCB
 {
-    NSLog(@"%@ %@", NSStringFromCGPoint(self.myCircle.position), NSStringFromCGPoint(self.clippingNode.position));
     self.clippingNode.stencil = self.myCircle;
     self.clippingNode.alphaThreshold = 0.25;
 }
